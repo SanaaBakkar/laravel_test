@@ -23,6 +23,9 @@ Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
 Route::get('/login', 'LoginController@index');
 Route::post('/login','LoginController@verify');
 
+Route::get('/home', function () {
+    return view('home');
+});
 
 Route::get('/dynamic_dependent','DynamicDependent@index');
 Route::post('dynamic_dependent/fetch', 'DynamicDependent@fetch')->name('dynamicdependent.fetch');
