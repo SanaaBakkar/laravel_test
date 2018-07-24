@@ -59,6 +59,8 @@
 									<option> 5</option>
 								</select>
 		                   <input type='submit' value='Rate' >
+
+      <button type="submit" class="btn" name="logout" href="{{'/home'}}">Logout</button>
 	</form>
    </div>
    {{ csrf_field() }}
